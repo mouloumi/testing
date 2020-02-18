@@ -1,0 +1,9 @@
+###tester le push ###
+#il faut tout d'abord ajouter le nouveau fichier en le commitant
+#en suite il faut ajouter le depot distant en tapant git add origin master link_vers_le_depot_distant
+#ensuite il faut faire un git fetch origin master et git merge origin master
+#Si cela ne fonctionne pas alors
+#git fetch origin master:tmp
+git rebase tmp
+git push origin HEAD:master
+git branch -D tmp
